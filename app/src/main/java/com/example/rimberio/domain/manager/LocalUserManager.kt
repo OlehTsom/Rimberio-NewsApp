@@ -1,0 +1,11 @@
+package com.example.rimberio.domain.manager
+
+import kotlinx.coroutines.flow.Flow
+
+interface LocalUserManager {
+
+    suspend fun saveAppSettings()
+
+    fun readAppSettings() : Flow<Boolean>
+
+}
